@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+
+#Trie data structure for fast storing and retrieving of strings
+#Each string in the data structure can be found in constant time
+
 class TrieNode:
     def __init__(self):
         self.isWord = False;
@@ -25,5 +29,5 @@ class TrieNode:
 root = TrieNode()
 f = open('small', 'r')
 root.populate(f)
-#check cat:
-print(root.childs[2].childs[0].childs[19].isWord)
+
+print(root.childs[3].childs[14].childs[6].childs[6].childs[4].childs)
